@@ -30,7 +30,7 @@ GitHub Pages must issue the custom-domain certificate and have Enforce HTTPS ena
 
 ## Deployment status, 8 October 2026
 
-The main deployment passed. Main-domain DNS and nine companion domains have verified Pages bindings and DNS. Ten further companion domains have prepared redirect files, but GitHub temporarily blocked additional repository creation. Certificates were still pending at the last actual TLS check. This is not yet a verified HTTPS launch. See `deployment-status.json` for the exact domains and next steps.
+The main site is live at https://printaverses.com with a validated certificate and enforced HTTPS; the www hostname redirects to it. All 23 public pages returned HTTPS 200 and matched the local build, including business attribution. Nine companion domains have verified Pages bindings and DNS but still await certificates. Ten further companion domains have prepared redirect files, but GitHub temporarily blocked additional repository creation. The companion-domain rollout is incomplete. See `deployment-status.json` for the exact domains and next steps.
 
 ## Domain routing
 
