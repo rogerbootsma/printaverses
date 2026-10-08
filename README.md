@@ -10,7 +10,9 @@ npm run check
 npm run preview
 ```
 
-No package installation is needed. Node.js builds the static HTML from `brands.json`. The stylesheet and browser script are maintained in `dist/`. Publish `dist/` through the included GitHub Pages workflow. All site paths are relative and work under the custom domain or a GitHub project path.
+No package installation is needed. Node.js builds the static HTML from `brands.json`. The stylesheet and browser script are maintained in `dist/`. All site paths are relative and work under the custom domain or a GitHub project path.
+
+The public repository currently contains `website-source.zip`, the editable source and optimized assets. Extract it before local development. Its root workflow extracts the archive, builds and checks the website, then deploys `dist/`. The workflow inside the archive also supports publishing a normal extracted checkout.
 
 ## Artwork
 
@@ -25,6 +27,10 @@ Every page links back to Printaverses and includes Metaversal Arts attribution, 
 The site contains only local static assets and browser interactions. It has no accounts, payment processing, analytics, cookies, personal-data storage, dependencies loaded from CDNs, or server endpoints. Content Security Policy restricts scripts, styles, images and fonts to the site's own origin, disables network connections, plugins, base tags and form submission. Referrers use strict-origin-when-cross-origin. Search and dialogue content use textContent, not HTML injection.
 
 GitHub Pages must issue the custom-domain certificate and have Enforce HTTPS enabled before the domain is considered ready. GitHub Pages does not support arbitrary custom response headers; this is not a penetration test or a claim of complete security. DNS and TLS state must be verified after deployment.
+
+## Deployment status, 8 October 2026
+
+The main deployment passed. Main-domain DNS and nine companion domains have verified Pages bindings and DNS. Ten further companion domains have prepared redirect files, but GitHub temporarily blocked additional repository creation. Certificates were still pending at the last actual TLS check. This is not yet a verified HTTPS launch. See `deployment-status.json` for the exact domains and next steps.
 
 ## Domain routing
 
